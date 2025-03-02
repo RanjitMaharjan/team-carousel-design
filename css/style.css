@@ -1,0 +1,437 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: #000;
+    color: #EFF1ED;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 65px;
+    color: #F4F7F5;
+}
+
+.slider-breaker {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.slider-breaker p {
+    color: #EF833F;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.post-container {
+    position: relative;
+    padding-top: 50px !important;
+}
+
+
+/* slider-skin-1-container css starts */
+
+/* arrows and dotrs css starts */
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px;
+}
+
+.slick-next {
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.slick-prev {
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: 1;
+    margin-right: 51px;
+}
+
+.slick-arrow {
+    background-color: transparent;
+    padding: 25px;
+    border: 1px solid red;
+    border-radius: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-arrow:hover {
+    background-color: #EF833F;
+    border: 1px solid #EF833F;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.slick-next:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f105";
+    font-weight: 900;
+
+}
+
+.slick-prev:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f104";
+    font-weight: 900;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #F4F7F5;
+}
+
+.slick-dots {
+    bottom: 0;
+    /* margin-bottom: 45px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.slick-dots li {
+    padding: 0;
+    height: 5px;
+    width: 30px;
+}
+
+.slick-dots li button {
+    padding: 0;
+    height: 5px;
+    width: 30px;
+}
+
+.slick-dots li button::before {
+    content: '';
+    height: 3px;
+    width: 30px;
+    background-color: rgb(200, 171, 171);
+    border-radius: 10px;
+}
+
+/* arrows and dotrs css ends */
+
+/* team-one css starts */
+
+.team-container {
+    padding: 50px 20px;
+    /* background-color: #000; */
+    width: 90%;
+    margin: auto;
+    max-width: 1450px;
+}
+
+.team-skin-one-item-content {
+    display: flex;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    box-shadow: rgba(247, 245, 245, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.team-skin-one-img {
+    background: linear-gradient(to bottom, rgba(35, 45, 49, 0.2) 20%, rgba(31, 32, 16, 0.5) 73%);
+    width: auto;
+    border-right: 1px solid #BCBD8B;
+}
+
+.team-skin-one-img img {
+    height: 100%;
+    width: auto;
+}
+
+.team-skin-one-content {
+    width: 50%;
+    padding: 20px 40px;
+    display: flex;
+    position: relative;
+    color: #EFF1ED;
+}
+
+.team-post {
+    font-family: cursive;
+}
+
+.team-name {
+    position: relative;
+    color: #717744;
+    font-size: 28px;
+    width: fit-content;
+    padding-bottom: 5px;
+    margin: 10px 0;
+}
+
+.team-name::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: #BCBD8B;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-desc {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.team-skin-one-social-btn {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.team-skin-one-social-btn .social-icons {
+    background-color: #EFF1ED;
+    text-align: center;
+    color: #000000;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #717744;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.team-skin-one-social-btn .social-icons:hover {
+    transform: scale(1.1);
+    background-color: #000;
+    color: #EFF1ED;
+    transition: all 0.3s ease-in-out;
+}
+
+/* team-one css ends */
+
+/* team-two css starts */
+
+.team-skin-two-item-content {
+    position: relative;
+    /* height: 350px; */
+    width: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    box-shadow: rgba(247, 245, 245, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.team-skin-two-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.team-skin-two-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.team-skin-two-item-content:hover .team-skin-two-content {
+    background: linear-gradient(to bottom, rgba(57, 61, 63, 0.2) 20%, rgba(9, 11, 14, 0.8) 73%);
+}
+
+.team-skin-two-text {
+    padding: 20px;
+}
+
+.team-skin-two-item-content:hover .team-skin-two-text .team-name::before {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-skin-two-item-content:hover .team-skin-two-social-btn {
+    padding-top: 20px;
+}
+
+.team-skin-two-social-btn .social-icons {
+    background-color: #EFF1ED;
+    color: #fff;
+    height: 25px;
+    width: 25px;
+    align-items: center;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 3px;
+    background: linear-gradient(to bottom, rgba(57, 61, 63, 0.2) 20%, rgba(9, 11, 14, 0.8) 73%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+}
+
+.team-skin-two-social-btn .social-icons:hover {
+    background: #EFF1ED;
+    color: #000;
+}
+
+.team-skin-two-content .team-desc,
+.team-skin-two-social-btn {
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-skin-two-item-content:hover .team-skin-two-content .team-desc,
+.team-skin-two-item-content:hover .team-skin-two-social-btn {
+    max-height: 100%;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+/* team-two css ends */
+
+
+/* team-three css start */
+
+/* .team-skin-three-item {
+    height: 400px;
+} */
+
+.team-skin-three-item {
+    position: relative;
+    /* height: 350px; */
+    width: auto;
+    background: rgba(52, 25, 25, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    box-shadow: rgba(247, 245, 245, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.team-skin-three-item-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-skin-three-img {
+    height: 300px;
+    width: 300px;
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background-image: radial-gradient(#000000, #717744, #EFF1ED, #BCBD8B);
+    align-items: start;
+    position: relative;
+}
+
+.team-skin-three-content {
+    height: 50%;
+}
+
+.team-skin-three-text .team-desc {
+    padding: 10px 0;
+}
+
+.team-skin-three-social-btn .social-icons {
+    background-color: #EFF1ED;
+    color: #fff;
+    height: 25px;
+    width: 25px;
+    align-items: center;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 3px;
+    background: linear-gradient(to bottom, rgba(57, 61, 63, 0.2) 20%, rgba(9, 11, 14, 0.8) 73%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+}
+
+.team-skin-three-social-btn .social-icons:hover {
+    background: #EFF1ED;
+    color: #000;
+}
+
+.team-skin-three-content .team-post,
+.team-skin-three-content .team-desc,
+.team-skin-three-social-btn {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-skin-three-item-content:hover .team-skin-three-content .team-post,
+.team-skin-three-item-content:hover .team-skin-three-content .team-desc,
+.team-skin-three-item-content:hover .team-skin-three-social-btn {
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.team-skin-three-item-content:hover .team-skin-three-img {
+    height: 150px;
+    width: 150px;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-skin-three-item-content:hover .team-skin-three-img img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-skin-three-item-content:hover {
+    align-items: flex-start;
+}
+
+.team-name-contain {
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-skin-three-item-content:hover .team-name-contain {
+    justify-content: flex-start;
+    transition: all 0.3s ease-in-out;
+}
+
+/* team-three css ends */
