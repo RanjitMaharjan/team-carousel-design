@@ -2,6 +2,6 @@
 webfonts/
 Montserrat/
 fonts/
-css/slick/
-css/all.min.css
-js/slick/
+# css/slick/
+# css/all.min.css
+# js/slick/
